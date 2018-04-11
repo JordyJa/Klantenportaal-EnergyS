@@ -1,0 +1,17 @@
+﻿<Page
+    x:Class="Klantenportaal_EnergyS.BlankPage1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Klantenportaal_EnergyS"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" Text="Abonnement verlengen" Margin="447,311,0,0"/>
+        <TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" Text="Abonnement opzeggen" Margin="863,311,0,0"/>
+        <Image Name="Verlengen" HorizontalAlignment="Left" Height="200" Width="200" VerticalAlignment="Center" Margin="429,379,0,421" Source="Assets/StoreLogo.png"/>
+        <Image Name="Opzeggen" HorizontalAlignment="Left" Height="200" Width="200" VerticalAlignment="Center" Margin="836,379,0,421" Source="Assets/StoreLogo.png"/>
+        <Image Name="Terug" HorizontalAlignment="Left" Height="109" Width="308" VerticalAlignment="Top" Source="Assets/Pijltje3.png" Margin="10,26,0,0"/>
+    </Grid>
+</Page>
