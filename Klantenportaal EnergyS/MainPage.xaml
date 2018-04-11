@@ -8,7 +8,21 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <TextBlock HorizontalAlignment="Left" Margin="625,200,0,0" Text="homepage klantenportaal" TextWrapping="Wrap" VerticalAlignment="Top" Height="88" Width="326"/>
-
+        <TextBlock HorizontalAlignment="Left" Margin="630,199,0,0" Text="Welkom bij de startpagina!" TextWrapping="Wrap" VerticalAlignment="Top" Height="88" Width="326"/>
+        <TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" Text="Kies hieronder wat u wilt inzien." Margin="622,257,0,0"/>
+        <TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" Text="Vragen en Klachten" Margin="251,366,0,0"/>
+        <TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" Text="Abonnementen" Margin="670,366,0,0" RenderTransformOrigin="0.671,-1.12"/>
+        <TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" Text="Energie verbruik inzien" Margin="1033,366,0,0"/>
+        <Image Name="Vragen" HorizontalAlignment="Left" Height="200" Width="200" VerticalAlignment="Top" Margin="223,428,0,0" Source="Assets/StoreLogo.png"/>
+        <Image Name="Overzicht" HorizontalAlignment="Left" Height="200" Width="200" VerticalAlignment="Top" Margin="1011,428,0,0" Source="Assets/StoreLogo.png"/>
+        <Image Name="Abonnement" HorizontalAlignment="Left" Height="200" Width="200" VerticalAlignment="Top" Margin="630,428,0,0" Source="Assets/StoreLogo.png"/>
+        <Image Name="Profiel" HorizontalAlignment="Left" Height="50"  Width="50"  VerticalAlignment="Top" Margin="54,36,0,0" Source="Assets/StoreLogo.png"/>
+        <Image Name="Wachtwoord" HorizontalAlignment="Left" Height="50"  Width="50"  VerticalAlignment="Top" Margin="54,136,0,0" Source="Assets/StoreLogo.png"/>
+        <Button Name="Profielknop" Content="Profiel Inzien" HorizontalAlignment="Left" Height="50" Width="170" VerticalAlignment="Top" Margin="179,36,0,0"/>
+        <Button Name="Wachtwoordknop" Content="Wachtwoord wijzigen" HorizontalAlignment="Left" Height="50" Width="170" VerticalAlignment="Top" Margin="179,136,0,0"/>
+        <Button Name="Uitlogknop" Content="Uitloggen" HorizontalAlignment="Right" Height="50" Width="150" VerticalAlignment="Top" Margin="0,36,48,0"/>
+        <Button Name="Contactknop" Content="Contact opnemen" HorizontalAlignment="Left" Height="50" Width="150" VerticalAlignment="Bottom" Margin="251,0,0,294"/>
+        <Button Name="Abonnementknop" Content="Naar abonnementen" HorizontalAlignment="Left" Height="50" Width="152" VerticalAlignment="Bottom" Margin="656,0,0,294"/>
+        <Button Name="Overzichtknop" Content="Overzicht inzien" HorizontalAlignment="Left" Height="50" Width="150" VerticalAlignment="Bottom" Margin="1033,0,0,294"/>
     </Grid>
 </Page>

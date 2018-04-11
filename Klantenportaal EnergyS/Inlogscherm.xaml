@@ -9,7 +9,7 @@
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" RenderTransformOrigin="0.585,0.641" Margin="0,0,0,0">
         <TextBlock HorizontalAlignment="Left" Margin="517,200,0,0" Text="Welkom bij het klantenportaal van EnergyS" TextWrapping="Wrap" VerticalAlignment="Top" Height="68" Width="466" TextAlignment="Center" FontSize="24" FontFamily="Arial"/>
-        <Image HorizontalAlignment="Left" Height="235" Margin="522,273,0,0" VerticalAlignment="Top" Width="453"/>
+        <Image HorizontalAlignment="Left" Height="235" Margin="522,273,0,0" VerticalAlignment="Top" Width="453" Source="Assets/StoreLogo.png"/>
         <TextBlock HorizontalAlignment="Left" Margin="540,575,0,0" Text="Gebruikersnummer" TextWrapping="Wrap" VerticalAlignment="Top" Height="30"/>
         <TextBlock HorizontalAlignment="Left" Margin="548,636,0,0" Text="Wachtwoord" TextWrapping="Wrap" VerticalAlignment="Top" Height="30" Width="127"/>
         <TextBox Name="Gebruikersnummer" HorizontalAlignment="Left" Margin="740,567,0,0" Text="" VerticalAlignment="Top" Height="43" Width="190"/>
