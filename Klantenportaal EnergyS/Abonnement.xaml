@@ -12,6 +12,8 @@
         <TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" Text="Abonnement opzeggen" Margin="863,311,0,0"/>
         <Image Name="Verlengen" HorizontalAlignment="Left" Height="200" Width="200" VerticalAlignment="Center" Margin="429,379,0,421" Source="Assets/StoreLogo.png"/>
         <Image Name="Opzeggen" HorizontalAlignment="Left" Height="200" Width="200" VerticalAlignment="Center" Margin="836,379,0,421" Source="Assets/StoreLogo.png"/>
-        <Image Name="Terug" HorizontalAlignment="Left" Height="109" Width="308" VerticalAlignment="Top" Source="Assets/Pijltje3.png" Margin="10,26,0,0"/>
+        <Button HorizontalAlignment="Left" VerticalAlignment="Top" Margin="17,14,0,0" Background="{x:Null}" FontFamily="Arial" FontSize="22" Click="Button_Click" Height="152" Width="341">
+            <Image Source="Assets/Pijltje3.png" Stretch="Fill" />
+        </Button>
     </Grid>
 </Page>

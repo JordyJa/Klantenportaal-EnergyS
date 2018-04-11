@@ -98,6 +98,9 @@
     <Compile Include="Abonnement.xaml.cs">
       <DependentUpon>Abonnement.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Klachten_en_vragen.xaml.cs">
+      <DependentUpon>Klachten_en_vragen.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Inlogscherm.xaml.cs">
       <DependentUpon>Inlogscherm.xaml</DependentUpon>
     </Compile>
@@ -131,6 +134,10 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Page Include="Abonnement.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Klachten_en_vragen.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
