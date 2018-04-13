@@ -8,8 +8,13 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <Button HorizontalAlignment="Left" VerticalAlignment="Top" Margin="27,29,0,0" Background="{x:Null}" FontFamily="Arial" FontSize="22" Click="Button_Click" BorderBrush="{x:Null}" Height="141" Width="382">
+        <Button HorizontalAlignment="Left" VerticalAlignment="Top" Margin="27,29,0,0" Background="{x:Null}" FontFamily="Arial" FontSize="22" Click="Button_Click" BorderBrush="{x:Null}" Height="152" Width="365">
             <Image Source="Assets/Pijltje3.png" Stretch="Fill"/>
         </Button>
+        <TextBlock HorizontalAlignment="Left" Margin="259,416,0,0" Text="selecteer wat voor een bericht u wilt sturen:" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <ComboBox x:Name="Bericht_type" ItemsSource="{x:Bind bericht_Types}" HorizontalAlignment="Left" Margin="619,410,0,0" VerticalAlignment="Top" Width="186"/>
+        <TextBox Name="Klant_Bericht" HorizontalAlignment="Left" Height="242" Margin="609,510,0,0" Text="" VerticalAlignment="Top" Width="388" TextWrapping="Wrap"/>
+        <TextBlock HorizontalAlignment="Left" Margin="469,511,0,0" Text="Uw bericht:" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <Button Content="versturen" HorizontalAlignment="Left" Margin="614,829,0,0" VerticalAlignment="Top" Width="158"/>
     </Grid>
 </Page>

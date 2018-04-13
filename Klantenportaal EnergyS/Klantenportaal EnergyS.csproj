@@ -98,6 +98,7 @@
     <Compile Include="Abonnement.xaml.cs">
       <DependentUpon>Abonnement.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Bericht_Type.cs" />
     <Compile Include="Klachten_en_vragen.xaml.cs">
       <DependentUpon>Klachten_en_vragen.xaml</DependentUpon>
     </Compile>

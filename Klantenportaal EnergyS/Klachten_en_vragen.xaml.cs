@@ -22,9 +22,18 @@ namespace Klantenportaal_EnergyS
     /// </summary>
     public sealed partial class BlankPage2 : Page
     {
+        List<Bericht_Type> bericht_Types = new List<Bericht_Type>();
         public BlankPage2()
         {
             this.InitializeComponent();
+            bericht_Types.Add(new Bericht_Type()
+            {
+                Name = "Vraag"
+            });
+            bericht_Types.Add(new Bericht_Type()
+            {
+                Name = "Klacht"
+            });
         }
         private void Button_Click(object sender, RoutedEventArgs e)
         {
