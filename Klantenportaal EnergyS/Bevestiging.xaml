@@ -8,8 +8,10 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <TextBlock HorizontalAlignment="Left" Margin="474,351,0,0" Text="Bedankt voor uw bericht! een medewerker zal spoedig contact met u opnemen." TextWrapping="Wrap" VerticalAlignment="Top" Height="84" Width="533"/>
-        <Image HorizontalAlignment="Left" Height="128" Margin="682,412,0,0" VerticalAlignment="Top" Width="122" Source="Assets/lach.png"/>
+        <TextBlock HorizontalAlignment="Left" Margin="445,345,0,0" Text="Bedankt voor uw bericht! Een van onze medewerkers zal spoedig contact met u opnemen." TextWrapping="Wrap" VerticalAlignment="Top" Height="84" Width="604"/>
+        <Image HorizontalAlignment="Left" Height="128" Margin="682,418,0,0" VerticalAlignment="Top" Width="122" Source="Assets/lach.png"/>
+        <TextBlock HorizontalAlignment="Left" Margin="565,580,0,0" Text="U kunt met knop hieronder terug naar de startpagina." TextWrapping="Wrap" VerticalAlignment="Top" Height="40" Width="363"/>
+        <Button Content="terug" HorizontalAlignment="Left" Margin="650,645,0,0" VerticalAlignment="Top" Height="35" Width="185" Click="Button_Click"/>
 
     </Grid>
 </Page>

@@ -20,16 +20,16 @@ namespace Klantenportaal_EnergyS
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class Bevestiging : Page
+    public sealed partial class Adres_wijziging : Page
     {
-        public Bevestiging()
+        public Adres_wijziging()
         {
             this.InitializeComponent();
-
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            //een popup zodat je geen leeg vakje kan bevestigen?
             this.Frame.Navigate(typeof(MainPage));
         }
     }
