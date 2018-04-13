@@ -99,6 +99,9 @@
       <DependentUpon>Abonnement.xaml</DependentUpon>
     </Compile>
     <Compile Include="Bericht_Type.cs" />
+    <Compile Include="Bevestiging.xaml.cs">
+      <DependentUpon>Bevestiging.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Klachten_en_vragen.xaml.cs">
       <DependentUpon>Klachten_en_vragen.xaml</DependentUpon>
     </Compile>
@@ -117,6 +120,8 @@
     <None Include="Klantenportaal EnergyS_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\Droevig.png" />
+    <Content Include="Assets\lach.png" />
     <Content Include="Assets\Pijltje.png" />
     <Content Include="Assets\Pijltje3.png" />
     <Content Include="Assets\Pijtje2.png" />
@@ -135,6 +140,10 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Page Include="Abonnement.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Bevestiging.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

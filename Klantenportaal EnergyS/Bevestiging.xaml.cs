@@ -20,14 +20,24 @@ namespace Klantenportaal_EnergyS
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class Inlogscherm : Page
+    public sealed partial class Bevestiging : Page
     {
-        public Inlogscherm()
+        public Bevestiging()
         {
             this.InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void RadioButton_Checked(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void RadioButton_Checked_1(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void RadioButton_Checked_2(object sender, RoutedEventArgs e)
         {
 
         }
