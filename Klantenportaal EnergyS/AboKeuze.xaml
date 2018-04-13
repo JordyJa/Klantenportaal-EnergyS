@@ -1,0 +1,27 @@
+﻿<Page
+    x:Class="Klantenportaal_EnergyS.AboKeuze"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Klantenportaal_EnergyS"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Image HorizontalAlignment="Left" Height="132" Width="393" VerticalAlignment="Top" Margin="10,10,0,0" Source="Assets/Pijltje3.png"/>
+        <TextBlock HorizontalAlignment="Left" VerticalAlignment="Center" Text="Kies hieronder het gewenste abonnement" Margin="551,289,0,674" Height="37" Width="299"/>
+        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Text="EnergySimpel" Margin="310,444,1092,528" Height="28" Width="98" SelectionChanged="TextBlock_SelectionChanged"/>
+        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Text="Flexibel 1 jaar abonnement" Margin="266,479,1055,501"/>
+        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Text="Prijs p/m" Margin="325,512,1116,468"/>
+        <Border BorderBrush="Black" HorizontalAlignment="Left" Height="146" Margin="244,416,0,0" VerticalAlignment="Top" Width="220" BorderThickness="2,2,2,2"/>
+        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Text="EnergyStandaard" Margin="641,444,739,528" Height="28" Width="120" SelectionChanged="TextBlock_SelectionChanged"/>
+        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Text="Flexibel 3 jaar abonnement" Margin="606,479,715,501"/>
+        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Text="Prijs p/m" Margin="665,512,776,468"/>
+        <Border BorderBrush="Black" HorizontalAlignment="Left" Height="146" Margin="584,416,0,0" VerticalAlignment="Top" Width="220" BorderThickness="2,2,2,2"/>
+        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Text="EnergySuper" Margin="985,444,417,528" Height="28" Width="98" SelectionChanged="TextBlock_SelectionChanged"/>
+        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Text="Flexibel 5 jaar abonnement" Margin="941,479,380,501"/>
+        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Text="Prijs p/m" Margin="1000,512,441,468"/>
+        <Border BorderBrush="Black" HorizontalAlignment="Left" Height="146" Margin="919,416,0,0" VerticalAlignment="Top" Width="220" BorderThickness="2,2,2,2"/>
+        <Button Content="Naar aanvraagformulier" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="606,0,0,264" Height="62" Width="198"/>
+    </Grid>
+</Page>

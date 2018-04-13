@@ -1,0 +1,44 @@
+﻿<Page
+    x:Class="Klantenportaal_EnergyS.Profielpagina"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Klantenportaal_EnergyS"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Height="1000" VerticalAlignment="Top" RequestedTheme="Default" RenderTransformOrigin="0.532,0.495">
+        <TextBlock Text="Gebruikersnummer" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="202,210,0,0"/>
+        <TextBlock Text="Voornaam" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="202,258,0,0"/>
+        <TextBlock Text="Achternaam" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="202,309,0,0"/>
+        <TextBlock Text="Geslacht" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="202,356,0,0"/>
+        <TextBlock Text="Straatnaam" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="203,397,0,0"/>
+        <TextBlock Text="Huisnr" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="631,397,0,0"/>
+        <TextBlock Text="Postcode" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="203,444,0,0"/>
+        <TextBlock Text="Woonplaats" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="631,439,0,0"/>
+        <TextBlock Text="E-mailadres" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="202,478,0,0"/>
+        <TextBlock Text="Mobiel telefoonnummer" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="202,525,0,0"/>
+        <TextBlock Name="Gebruikersnummer" HorizontalAlignment="Center" VerticalAlignment="Center" Height="32" Margin="395,210,944,758" Width="161" RequestedTheme="Default" Visibility="Visible" FocusVisualSecondaryBrush="#99D44A24"/>
+        <TextBlock Name="Voornaam" HorizontalAlignment="Center" VerticalAlignment="Center" Height="32" Margin="395,258,944,710" Width="161" RequestedTheme="Default" Visibility="Visible" FocusVisualSecondaryBrush="#99D44A24"/>
+        <TextBlock Name="Achternaam" HorizontalAlignment="Center" VerticalAlignment="Center" Height="32" Margin="395,312,944,656" Width="161" RequestedTheme="Default" Visibility="Visible" FocusVisualSecondaryBrush="#99D44A24"/>
+        <TextBlock Name="Geslacht" HorizontalAlignment="Center" VerticalAlignment="Center" Height="32" Margin="398,355,941,613" Width="161" RequestedTheme="Default" Visibility="Visible" FocusVisualSecondaryBrush="#99D44A24" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
+            <TextBlock.RenderTransform>
+                <CompositeTransform SkewX="-2.526" TranslateX="-0.706"/>
+            </TextBlock.RenderTransform>
+        </TextBlock>
+        <TextBlock Name="Straatnaam" HorizontalAlignment="Center" VerticalAlignment="Center" Height="32" Margin="395,397,944,571" Width="161" RequestedTheme="Default" Visibility="Visible" FocusVisualSecondaryBrush="#99D44A24"/>
+        <TextBlock Name="Huisnr" HorizontalAlignment="Center" VerticalAlignment="Center" Height="32" Margin="782,397,557,571" Width="161" RequestedTheme="Default" Visibility="Visible" FocusVisualSecondaryBrush="#99D44A24"/>
+        <TextBlock Name="Postcode" HorizontalAlignment="Center" VerticalAlignment="Center" Height="32" Margin="395,439,944,529" Width="161" RequestedTheme="Default" Visibility="Visible" FocusVisualSecondaryBrush="#99D44A24"/>
+        <TextBlock Name="Woonplaats" HorizontalAlignment="Center" VerticalAlignment="Center" Height="32" Margin="782,439,557,529" Width="161" RequestedTheme="Default" Visibility="Visible" FocusVisualSecondaryBrush="#99D44A24"/>
+        <TextBlock Name="Emailadres" HorizontalAlignment="Center" VerticalAlignment="Center" Height="32" Margin="395,478,944,490" Width="161" RequestedTheme="Default" Visibility="Visible" FocusVisualSecondaryBrush="#99D44A24"/>
+        <TextBlock Name="Mobielnummer" HorizontalAlignment="Center" VerticalAlignment="Center" Height="32" Margin="395,525,944,443" Width="161" RequestedTheme="Default" Visibility="Visible" FocusVisualSecondaryBrush="#99D44A24" RenderTransformOrigin="0.5,0.5">
+            <TextBlock.RenderTransform>
+                <CompositeTransform SkewX="0" TranslateX="0"/>
+            </TextBlock.RenderTransform>
+        </TextBlock>
+        <TextBlock Text="Uw profiel" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="714,112,0,0"/>
+        <Image HorizontalAlignment="Left" Height="90" Width="294" VerticalAlignment="Top" Source="Assets/Pijltje3.png"/>
+        <Button HorizontalAlignment="Right" VerticalAlignment="Top" Content="Adres wijzigen" Height="59" Margin="0,397,280,0" Width="168"/>
+
+    </Grid>
+</Page>
