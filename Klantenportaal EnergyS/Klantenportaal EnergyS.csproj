@@ -95,6 +95,9 @@
     <Compile Include="Aanvraag formulier.xaml.cs">
       <DependentUpon>Aanvraag formulier.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Abonnementskeuze.xaml.cs">
+      <DependentUpon>Abonnementskeuze.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Adres wijziging.xaml.cs">
       <DependentUpon>Adres wijziging.xaml</DependentUpon>
     </Compile>
@@ -107,6 +110,9 @@
     <Compile Include="Bericht_Type.cs" />
     <Compile Include="Bevestiging.xaml.cs">
       <DependentUpon>Bevestiging.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Instellingen.xaml.cs">
+      <DependentUpon>Instellingen.xaml</DependentUpon>
     </Compile>
     <Compile Include="Klachten_en_vragen.xaml.cs">
       <DependentUpon>Klachten_en_vragen.xaml</DependentUpon>
@@ -160,11 +166,19 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Abonnementskeuze.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Adres wijziging.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Bevestiging.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Instellingen.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
