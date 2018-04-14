@@ -120,6 +120,9 @@
     <Compile Include="Overzicht.xaml.cs">
       <DependentUpon>Overzicht.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Profielgegevens.xaml.cs">
+      <DependentUpon>Profielgegevens.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -134,6 +137,7 @@
     <Content Include="Assets\Pijltje.png" />
     <Content Include="Assets\Pijltje3.png" />
     <Content Include="Assets\Pijtje2.png" />
+    <Content Include="Assets\Vorige.png" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />
@@ -177,6 +181,10 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="Overzicht.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Profielgegevens.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

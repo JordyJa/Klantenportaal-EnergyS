@@ -31,10 +31,10 @@
         <TextBlock HorizontalAlignment="Left" Margin="276,615,0,0" Text="postcode" TextWrapping="Wrap" VerticalAlignment="Top" Height="30" Width="95"/>
         <TextBlock HorizontalAlignment="Left" Margin="670,540,0,0" Text="huisnummer + toevoeging" TextWrapping="Wrap" VerticalAlignment="Top" Height="45" Width="130"/>
         <TextBlock HorizontalAlignment="Left" Margin="674,615,0,0" Text="woonplaats" TextWrapping="Wrap" VerticalAlignment="Top"/>
-        <TextBox Name="Nieuwe_Straatnaam" HorizontalAlignment="Left" Margin="395,530,0,0" Text="TextBox" VerticalAlignment="Top" Height="47" Width="140"/>
-        <TextBox Name="Nieuwe_Postcode" HorizontalAlignment="Left" Margin="395,607,0,0" Text="TextBox" VerticalAlignment="Top" Height="47" Width="140"/>
-        <TextBox Name="Nieuwe_Huisnummer" HorizontalAlignment="Left" Margin="800,530,0,0" Text="TextBox" VerticalAlignment="Top" Height="47" Width="140"/>
-        <TextBox Name="Nieuwe_Woonplaats" HorizontalAlignment="Left" Margin="800,607,0,0" Text="TextBox" VerticalAlignment="Top" Height="47" Width="140"/>
+        <TextBox Name="Nieuwe_Straatnaam" HorizontalAlignment="Left" Margin="395,530,0,0" VerticalAlignment="Top" Height="47" Width="140"/>
+        <TextBox Name="Nieuwe_Postcode" HorizontalAlignment="Left" Margin="395,607,0,0" VerticalAlignment="Top" Height="47" Width="140"/>
+        <TextBox Name="Nieuwe_Huisnummer" HorizontalAlignment="Left" Margin="800,530,0,0" VerticalAlignment="Top" Height="47" Width="140"/>
+        <TextBox Name="Nieuwe_Woonplaats" HorizontalAlignment="Left" Margin="800,607,0,0" VerticalAlignment="Top" Height="47" Width="140"/>
         <Button Content="Versturen" HorizontalAlignment="Left" Margin="545,725,0,0" VerticalAlignment="Top" Height="45" Width="181" Click="Button_Click"/>
     </Grid>
 </Page>
