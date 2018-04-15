@@ -111,6 +111,7 @@
     <Compile Include="Bevestiging.xaml.cs">
       <DependentUpon>Bevestiging.xaml</DependentUpon>
     </Compile>
+    <Compile Include="CSVParse.cs" />
     <Compile Include="Instellingen.xaml.cs">
       <DependentUpon>Instellingen.xaml</DependentUpon>
     </Compile>
@@ -135,6 +136,7 @@
     <AppxManifest Include="Package.appxmanifest">
       <SubType>Designer</SubType>
     </AppxManifest>
+    <None Include="Files\Login gegevens klant dimensie 1.3.csv" />
     <None Include="Klantenportaal EnergyS_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>

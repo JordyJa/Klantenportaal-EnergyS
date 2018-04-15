@@ -15,5 +15,6 @@
         <TextBox Name="Gebruikersnummer" HorizontalAlignment="Left" Margin="740,567,0,0" Text="" VerticalAlignment="Top" Height="43" Width="190"/>
         <TextBox Name="Wachtwoord" HorizontalAlignment="Left" Margin="740,628,0,0" Text="" VerticalAlignment="Top" Height="43" Width="190"/>
         <Button Content="Inloggen" HorizontalAlignment="Left" Margin="652,740,0,0" VerticalAlignment="Top" Height="36" Width="137" RequestedTheme="Light" Background="LightBlue" Click="Button_Click"/>
+        <TextBlock Name="LoginStatus" HorizontalAlignment="Left" Margin="685,685,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Height="35"/>
     </Grid>
 </Page>
