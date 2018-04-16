@@ -115,9 +115,6 @@
     <Compile Include="Instellingen.xaml.cs">
       <DependentUpon>Instellingen.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Klachten_en_vragen.xaml.cs">
-      <DependentUpon>Klachten_en_vragen.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Inlogscherm.xaml.cs">
       <DependentUpon>Inlogscherm.xaml</DependentUpon>
     </Compile>
@@ -131,6 +128,9 @@
       <DependentUpon>Profielgegevens.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="VragenKlachten.xaml.cs">
+      <DependentUpon>VragenKlachten.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">
@@ -184,10 +184,6 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Klachten_en_vragen.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="Inlogscherm.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -201,6 +197,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Profielgegevens.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="VragenKlachten.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

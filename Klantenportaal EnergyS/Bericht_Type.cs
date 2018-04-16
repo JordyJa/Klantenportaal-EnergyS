@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Klantenportaal_EnergyS
+namespace Vragen_en_klachten1
 {
     class Bericht_Type
     {
@@ -15,7 +15,7 @@ namespace Klantenportaal_EnergyS
         }
         public override string ToString()
         {
-            return this.Name;
+            return Name;
         }
     }
 }

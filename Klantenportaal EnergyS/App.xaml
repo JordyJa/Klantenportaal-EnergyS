@@ -1,8 +1,8 @@
 ﻿<Application
-    x:Class="Klantenportaal_EnergyS.App"
+    x:Class="Vragen_en_klachten.App"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="using:Klantenportaal_EnergyS"
+    xmlns:local="using:Vragen_en_klachten"
     RequestedTheme="Light">
 
 </Application>

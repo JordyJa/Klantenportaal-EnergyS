@@ -15,7 +15,7 @@ using Windows.UI.Xaml.Navigation;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 
-namespace Klantenportaal_EnergyS
+namespace Vragen_en_klachten
 {
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
@@ -26,11 +26,9 @@ namespace Klantenportaal_EnergyS
         {
             this.InitializeComponent();
         }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            //een popup zodat je geen leeg vakje kan bevestigen?
-            this.Frame.Navigate(typeof(MainPage));
+            this.Frame.Navigate(typeof(Profielgegevens));
         }
     }
 }

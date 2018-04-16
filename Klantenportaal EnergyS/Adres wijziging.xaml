@@ -1,15 +1,15 @@
 ﻿<Page
-    x:Class="Klantenportaal_EnergyS.Adres_wijziging"
+    x:Class="Vragen_en_klachten.Adres_wijziging"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="using:Klantenportaal_EnergyS"
+    xmlns:local="using:Vragen_en_klachten"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <Button HorizontalAlignment="Left" VerticalAlignment="Top" Margin="17,14,0,0" Background="{x:Null}" FontFamily="Arial" FontSize="22" Click="Button_Click" Height="152" Width="341">
-            <Image Source="Assets/Pijltje3.png" Stretch="Fill" />
+        <Button HorizontalAlignment="Left" VerticalAlignment="Top" Margin="70,40,0,0" Background="{x:Null}" FontFamily="Arial" FontSize="22" Height="59" Width="300" Click="Button_Click_1">
+            <Image Source="Assets/Vorige.png" Stretch="Fill" />
         </Button>
         <Border BorderThickness="2" BorderBrush="Black" Margin="390,260,975,695">
             <TextBlock x:Name="Oude_Straatnaam" Text="" VerticalAlignment="Center" HorizontalAlignment="Center"/>
@@ -35,6 +35,6 @@
         <TextBox Name="Nieuwe_Postcode" HorizontalAlignment="Left" Margin="395,607,0,0" VerticalAlignment="Top" Height="47" Width="140"/>
         <TextBox Name="Nieuwe_Huisnummer" HorizontalAlignment="Left" Margin="800,530,0,0" VerticalAlignment="Top" Height="47" Width="140"/>
         <TextBox Name="Nieuwe_Woonplaats" HorizontalAlignment="Left" Margin="800,607,0,0" VerticalAlignment="Top" Height="47" Width="140"/>
-        <Button Content="Versturen" HorizontalAlignment="Left" Margin="545,725,0,0" VerticalAlignment="Top" Height="45" Width="181" Click="Button_Click"/>
+        <Button Content="Versturen" HorizontalAlignment="Left" Margin="545,725,0,0" VerticalAlignment="Top" Height="45" Width="181"/>
     </Grid>
 </Page>

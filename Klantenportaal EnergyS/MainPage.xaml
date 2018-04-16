@@ -1,8 +1,8 @@
 ﻿<Page
-    x:Class="Klantenportaal_EnergyS.MainPage"
+    x:Class="Vragen_en_klachten.MainPage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="using:Klantenportaal_EnergyS"
+    xmlns:local="using:Vragen_en_klachten"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
@@ -18,11 +18,11 @@
         <Image Name="Abonnement" HorizontalAlignment="Left" Height="200" Width="200" VerticalAlignment="Top" Margin="630,428,0,0" Source="Assets/StoreLogo.png"/>
         <Image Name="Profiel" HorizontalAlignment="Left" Height="50"  Width="50"  VerticalAlignment="Top" Margin="54,36,0,0" Source="Assets/StoreLogo.png"/>
         <Image Name="Wachtwoord" HorizontalAlignment="Left" Height="50"  Width="50"  VerticalAlignment="Top" Margin="54,136,0,0" Source="Assets/StoreLogo.png"/>
-        <Button Name="Profielknop" Content="Profiel Inzien" HorizontalAlignment="Left" Height="50" Width="170" VerticalAlignment="Top" Margin="179,36,0,0"/>
-        <Button Name="Wachtwoordknop" Content="Wachtwoord wijzigen" HorizontalAlignment="Left" Height="50" Width="170" VerticalAlignment="Top" Margin="179,136,0,0"/>
-        <Button Name="Uitlogknop" Content="Uitloggen" HorizontalAlignment="Right" Height="50" Width="150" VerticalAlignment="Top" Margin="0,36,48,0"/>
-        <Button Name="Contactknop" Content="Contact opnemen" HorizontalAlignment="Left" Height="50" Width="150" VerticalAlignment="Bottom" Margin="251,0,0,294"/>
-        <Button Name="Abonnementknop" Content="Naar abonnementen" HorizontalAlignment="Left" Height="50" Width="152" VerticalAlignment="Bottom" Margin="656,0,0,294"/>
-        <Button Name="Overzichtknop" Content="Overzicht inzien" HorizontalAlignment="Left" Height="50" Width="150" VerticalAlignment="Bottom" Margin="1033,0,0,294"/>
+        <Button Name="Profielknop" Content="Profiel Inzien" HorizontalAlignment="Left" Height="50" Width="170" VerticalAlignment="Top" Margin="179,36,0,0" Click="Profielknop_Click"/>
+        <Button Name="Wachtwoordknop" Content="Wachtwoord wijzigen" HorizontalAlignment="Left" Height="50" Width="170" VerticalAlignment="Top" Margin="179,136,0,0" Click="Wachtwoordknop_Click"/>
+        <Button Name="Uitlogknop" Content="Uitloggen" HorizontalAlignment="Right" Height="50" Width="150" VerticalAlignment="Top" Margin="0,36,48,0" Click="Uitlogknop_Click"/>
+        <Button Name="Contactknop" Content="Contact opnemen" HorizontalAlignment="Left" Height="50" Width="150" VerticalAlignment="Bottom" Margin="251,0,0,294" Click="Contactknop_Click"/>
+        <Button Name="Abonnementknop" Content="Naar abonnementen" HorizontalAlignment="Left" Height="50" Width="152" VerticalAlignment="Bottom" Margin="656,0,0,294" Click="Abonnementknop_Click"/>
+        <Button Name="Overzichtknop" Content="Overzicht inzien" HorizontalAlignment="Left" Height="50" Width="150" VerticalAlignment="Bottom" Margin="1033,0,0,294" Click="Overzichtknop_Click"/>
     </Grid>
 </Page>

@@ -14,7 +14,7 @@ using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
 
-namespace Klantenportaal_EnergyS
+namespace Vragen_en_klachten
 {
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
@@ -24,6 +24,36 @@ namespace Klantenportaal_EnergyS
         public MainPage()
         {
             this.InitializeComponent();
+        }
+
+        private void Uitlogknop_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(Inlogscherm));
+        }
+
+        private void Profielknop_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(Profielgegevens));
+        }
+
+        private void Wachtwoordknop_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(Instellingen));
+        }
+
+        private void Contactknop_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(Klantenportaal_EnergyS.VragenKlachten));
+        }
+
+        private void Abonnementknop_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(BlankPage1));
+        }
+
+        private void Overzichtknop_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(Overzicht));
         }
     }
 }
