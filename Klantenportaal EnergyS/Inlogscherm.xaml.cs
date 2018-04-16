@@ -50,15 +50,24 @@ namespace Klantenportaal_EnergyS
                         Debug.WriteLine(NieuweRow);
                         // een list maken die de rows een voor een opslaat
                         List<string> GebGegevens = new List<string>(new string[] {NieuweRow});
-                        Debug.WriteLine(GebGegevens[i]);
-                        //gebruikersnummers vergelijken tegen invoer
-                        if (Geb_nummer.Substring(0, Geb_nummer.Length) == NieuweRow.Substring(2, Geb_nummer.Length) && WW_gebruiker.Substring(0, WW_gebruiker.Length) == NieuweRow.Substring(1 + Geb_nummer.Length + 1, WW_gebruiker.Length))
+                        Debug.WriteLine(GebGegevens[i] + "de list");
+                        // check of er niks is ingevuld
+                        if(Geb_nummer != "" || WW_gebruiker != "")
                         {
-                            Frame.Navigate(typeof(MainPage)); //fix deze check!
+                            Debug.WriteLine(GebGegevens);
+                            // check of wat er is ingevuld wel overeenkomt met de inloggegevens
+                            if (Geb_nummer.Substring(0, Geb_nummer.Length) == GebGegevens[i].Substring(2, Geb_nummer.Length) && WW_gebruiker.Substring(0, WW_gebruiker.Length) == GebGegevens[i].Substring(2 + Geb_nummer.Length + 1, WW_gebruiker.Length))
+                            {
+                                Frame.Navigate(typeof(MainPage)); //fix deze check!
+                            }
+                            else
+                            {
+                                LoginStatus.Text = "Geef een geldige naam en/of gebruikersnummer";
+                            }
                         }
                         else
                         {
-                            //display error message
+                            LoginStatus.Text = "voer een wachtwoord en gebruikernummer in";
                         }
 
                     }
