@@ -16,12 +16,11 @@ using Windows.Storage;
 using System.Diagnostics;
 using System.Globalization;
 
-// The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 
 namespace Vragen_en_klachten
 {
     /// <summary>
-    /// An empty page that can be used on its own or navigated to within a Frame.
+    /// The login page
     /// </summary>
     public sealed partial class Inlogscherm : Page
     {
@@ -29,13 +28,14 @@ namespace Vragen_en_klachten
         {
             this.InitializeComponent();
         }
-        private async void Button_Click(object sender, RoutedEventArgs e)
+        public async void Button_Click(object sender, RoutedEventArgs e)
         {
             string Geb_nummer = Gebruikersnummer.Text;
             string WW_gebruiker = Wachtwoord.Text;
+            string Gebruiker_ID;
             Debug.WriteLine(Geb_nummer);
             Debug.WriteLine(WW_gebruiker);
-            //vanuit install directory
+            //CSV file wordt ingeladen vanuit de install directory
             StorageFolder installedLocation = Windows.ApplicationModel.Package.Current.InstalledLocation;
             var file = await installedLocation.GetFileAsync("Login gegevens klant dimensie 1.3.csv");
             using (CSVparse.CsvFileReader csvReader = new CSVparse.CsvFileReader(await file.OpenStreamForReadAsync()))
@@ -46,19 +46,22 @@ namespace Vragen_en_klachten
                     string NieuweRow = "";
                     for(int i = 0; i <row.Count; i++)
                     {
+                        //een nieuwe regel uit de csv file halen
                         NieuweRow += row[i] + ",";
-                        Debug.WriteLine(NieuweRow);
-                        // een list maken die de rows een voor een opslaat
+                        // een list maken die de regels een voor een opslaat
                         List<string> GebGegevens = new List<string>(new string[] {NieuweRow});
                         Debug.WriteLine(GebGegevens[i] + "de list");
-                        // check of er niks is ingevuld
+                        // check of de er door de gebruiker niks is ingevuld
                         if(Geb_nummer != "" || WW_gebruiker != "")
                         {
-                            Debug.WriteLine(GebGegevens);
                             // check of wat er is ingevuld wel overeenkomt met de inloggegevens
                             if (Geb_nummer.Substring(0, Geb_nummer.Length) == GebGegevens[i].Substring(2, Geb_nummer.Length) && WW_gebruiker.Substring(0, WW_gebruiker.Length) == GebGegevens[i].Substring(2 + Geb_nummer.Length + 1, WW_gebruiker.Length))
                             {
-                                Frame.Navigate(typeof(MainPage)); //fix deze check!
+                                Gebruiker_ID = GebGegevens[i].Substring(0, 1);
+                                Debug.WriteLine(Gebruiker_ID);
+                                (Application.Current as App).GebruikerString = Geb_nummer;
+                                (Application.Current as App).GebruikerID = Gebruiker_ID;
+                                Frame.Navigate(typeof(MainPage));
                             }
                             else
                             {

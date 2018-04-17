@@ -96,5 +96,7 @@ namespace Vragen_en_klachten
             //TODO: Save application state and stop any background activity
             deferral.Complete();
         }
+        public string GebruikerString { get; set; }
+        public string GebruikerID{ get; set; }
     }
 }

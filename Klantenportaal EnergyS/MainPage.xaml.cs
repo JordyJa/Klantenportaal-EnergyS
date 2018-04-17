@@ -21,6 +21,8 @@ namespace Vragen_en_klachten
     /// </summary>
     public sealed partial class MainPage : Page
     {
+        public string HuidigeGebruiker { get; private set; }
+
         public MainPage()
         {
             this.InitializeComponent();
@@ -38,7 +40,7 @@ namespace Vragen_en_klachten
 
         private void Wachtwoordknop_Click(object sender, RoutedEventArgs e)
         {
-            Frame.Navigate(typeof(Instellingen));
+            Frame.Navigate(typeof(Instellingen),HuidigeGebruiker);
         }
 
         private void Contactknop_Click(object sender, RoutedEventArgs e)
@@ -53,7 +55,11 @@ namespace Vragen_en_klachten
 
         private void Overzichtknop_Click(object sender, RoutedEventArgs e)
         {
-            Frame.Navigate(typeof(Overzicht));
+            Frame.Navigate(typeof(Overzicht), HuidigeGebruiker);
+        }
+        protected override void OnNavigatedTo(NavigationEventArgs e)
+        {
+           HuidigeGebruiker = (Application.Current as App).GebruikerString;
         }
     }
 }

@@ -20,19 +20,19 @@
         <TextBlock HorizontalAlignment="Left" Margin="275,535,0,0" Text="E-mail adres:" TextWrapping="Wrap" VerticalAlignment="Top" Height="35" Width="180"/>
         <TextBlock HorizontalAlignment="Left" Margin="275,585,0,0" Text="Mobiel telefoonnummer:" TextWrapping="Wrap" VerticalAlignment="Top" Height="35" Width="180"/>
         <TextBlock HorizontalAlignment="Left" Margin="275,635,0,0" Text="Thuis telefoonnummer:" TextWrapping="Wrap" VerticalAlignment="Top" Height="35" Width="180"/>
-        <TextBox HorizontalAlignment="Left" Margin="500,225,0,0" Text="" VerticalAlignment="Top" Height="40" Width="180" IsReadOnly="True"/>
-        <TextBox HorizontalAlignment="Left" Margin="500,275,0,0" Text="" VerticalAlignment="Top" Height="40" Width="180" IsReadOnly="True"/>
-        <TextBox HorizontalAlignment="Left" Margin="500,325,0,0" Text="" VerticalAlignment="Top" Height="40" Width="180" IsReadOnly="True"/>
-        <TextBox HorizontalAlignment="Left" Margin="500,375,0,0" Text="" VerticalAlignment="Top" Height="40" Width="180" IsReadOnly="True"/>
-        <TextBox HorizontalAlignment="Left" Margin="500,425,0,0" Text="" VerticalAlignment="Top" Height="40" Width="180" IsReadOnly="True"/>
-        <TextBox HorizontalAlignment="Left" Margin="500,475,0,0" Text="" VerticalAlignment="Top" Height="40" Width="180" IsReadOnly="True"/>
-        <TextBox HorizontalAlignment="Left" Margin="500,525,0,0" Text="" VerticalAlignment="Top" Height="40" Width="180" IsReadOnly="True"/>
-        <TextBox HorizontalAlignment="Left" Margin="500,575,0,0" Text="" VerticalAlignment="Top" Height="40" Width="180" IsReadOnly="True"/>
-        <TextBox HorizontalAlignment="Left" Margin="500,625,0,0" Text="" VerticalAlignment="Top" Height="40" Width="180" IsReadOnly="True"/>
+        <TextBox Name="Geb"  HorizontalAlignment="Left" Margin="500,225,0,0" Text="" VerticalAlignment="Top" Height="40" Width="180" IsReadOnly="True"/>
+        <TextBox Name="Naam" HorizontalAlignment="Left" Margin="500,275,0,0" Text="" VerticalAlignment="Top" Height="40" Width="180" IsReadOnly="True"/>
+        <TextBox Name="Achternaam" HorizontalAlignment="Left" Margin="500,325,0,0" Text="" VerticalAlignment="Top" Height="40" Width="180" IsReadOnly="True"/>
+        <TextBox Name="Geslacht" HorizontalAlignment="Left" Margin="500,375,0,0" Text="" VerticalAlignment="Top" Height="40" Width="180" IsReadOnly="True"/>
+        <TextBox Name="Straat" HorizontalAlignment="Left" Margin="500,425,0,0" Text="" VerticalAlignment="Top" Height="40" Width="180" IsReadOnly="True"/>
+        <TextBox Name="Postcode" HorizontalAlignment="Left" Margin="500,475,0,0" Text="" VerticalAlignment="Top" Height="40" Width="180" IsReadOnly="True"/>
+        <TextBox Name="Email" HorizontalAlignment="Left" Margin="500,525,0,0" Text="" VerticalAlignment="Top" Height="40" Width="180" IsReadOnly="True"/>
+        <TextBox Name="Mobiel" HorizontalAlignment="Left" Margin="500,575,0,0" Text="" VerticalAlignment="Top" Height="40" Width="180" IsReadOnly="True"/>
+        <TextBox Name="Thuis"  HorizontalAlignment="Left" Margin="500,625,0,0" Text="" VerticalAlignment="Top" Height="40" Width="180" IsReadOnly="True"/>
         <TextBlock HorizontalAlignment="Left" Margin="700,475,0,0" Text="Huisnummer:" TextWrapping="Wrap" VerticalAlignment="Top" Height="35" Width="180"/>
         <TextBlock HorizontalAlignment="Left" Margin="700,525,0,0" Text="Woonplaats:" TextWrapping="Wrap" VerticalAlignment="Top" Height="35" Width="180"/>
-        <TextBox HorizontalAlignment="Left" Margin="815,470,0,0" Text="" VerticalAlignment="Top" Height="40" Width="180" IsReadOnly="True"/>
-        <TextBox HorizontalAlignment="Left" Margin="815,520,0,0" Text="" VerticalAlignment="Top" Height="40" Width="180" IsReadOnly="True"/>
+        <TextBox Name="Huisnummer" HorizontalAlignment="Left" Margin="815,470,0,0" Text="" VerticalAlignment="Top" Height="40" Width="180" IsReadOnly="True"/>
+        <TextBox Name="Woonplaats" HorizontalAlignment="Left" Margin="815,520,0,0" Text="" VerticalAlignment="Top" Height="40" Width="180" IsReadOnly="True"/>
         <Button Content="Adres wijzigen" HorizontalAlignment="Left" Margin="1030,487,0,0" VerticalAlignment="Top" Height="48" Width="191" Click="Button_Click"/>
 
     </Grid>

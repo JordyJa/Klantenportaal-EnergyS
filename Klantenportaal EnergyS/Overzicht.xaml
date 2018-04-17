@@ -11,20 +11,23 @@
         <Button HorizontalAlignment="Left" VerticalAlignment="Top" Margin="17,14,0,0" Background="{x:Null}" FontFamily="Arial" FontSize="22" Height="152" Width="341" Click="Button_Click_1">
             <Image Source="Assets/Pijltje3.png" Stretch="Fill" />
         </Button>
-        <TextBlock HorizontalAlignment="Left" Margin="645,128,0,0" Text="Overzicht" TextWrapping="Wrap" VerticalAlignment="Top" Height="43" Width="123" FontSize="24"/>
-        <Border BorderBrush="Black" HorizontalAlignment="Left" Height="600" Margin="420,245,0,0" VerticalAlignment="Top" Width="570" BorderThickness="2,2,2,2">
-            <ListView HorizontalAlignment="Left" Height="581" Margin="7.6,7.6,0,0" VerticalAlignment="Top" Width="550" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
+        <TextBlock HorizontalAlignment="Left" Margin="681,185,0,0" Text="Overzicht" TextWrapping="Wrap" VerticalAlignment="Top" Height="43" Width="123" FontSize="24"/>
+        <Border BorderBrush="Black" HorizontalAlignment="Left" Height="310" Margin="461,255,0,0" VerticalAlignment="Top" Width="809" BorderThickness="2,2,2,2">
+            <ListView x:Name="EnergieOverzicht" ItemsSource="{x:Bind Regels}" HorizontalAlignment="Left" Height="296" Margin="7.6,7.6,0,0" VerticalAlignment="Top" Width="795" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
+                <ListView.ItemTemplate>
+                    <DataTemplate x:DataType="x:String">
+                        <Grid>
+                            <TextBlock Text="{x:Bind}" Foreground="Teal" 
+                           FontSize="15" Grid.Column="1"/>
+                        </Grid>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
                 <ListView.RenderTransform>
                     <CompositeTransform Rotation="-0.151"/>
                 </ListView.RenderTransform>
             </ListView>
         </Border>
-        <TextBlock HorizontalAlignment="Left" Margin="275,250,0,0" Text="Rij 1" TextWrapping="Wrap" VerticalAlignment="Top" Height="40" Width="130"/>
-        <Border BorderBrush="Black" HorizontalAlignment="Left" Height="40" Margin="255,245,0,0" VerticalAlignment="Top" Width="164" BorderThickness="2,2,2,2"/>
-        <TextBlock HorizontalAlignment="Left" Margin="430,215,0,0" Text="kolom 1" TextWrapping="Wrap" VerticalAlignment="Top"/>
-        <Border BorderBrush="Black" HorizontalAlignment="Left" Height="34" Margin="425,210,0,0" VerticalAlignment="Top" Width="100" BorderThickness="2,2,2,2"/>
-
-
+        <TextBlock Name="Gebruikernaam" HorizontalAlignment="Left" Margin="375,225,0,0" Text="naam" TextWrapping="Wrap" VerticalAlignment="Top"/>
     </Grid>
 
 </Page>
