@@ -47,7 +47,6 @@ namespace Vragen_en_klachten
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             GebruikerID = (Application.Current as App).GebruikerID;
-            DeGebruiker = e.Parameter as string;
         }
         private async void OverzichtLaden()
         {
@@ -72,7 +71,7 @@ namespace Vragen_en_klachten
                         {
                             string OverzichtRow = OverzichtGegevens[i];
                             string[] result = OverzichtRow.Split(';');
-                            OverzichtRow = string.Format("{0,-30}  {1,-30}  {2,-20}  {3,-30}  {4,-30}  {5,-25}",result[0],result[1],result[2],result[3],result[4],result[5]);
+                            OverzichtRow = string.Format("{0,-30}  {1,-30}  {2,-20}  {3,-30}  {4,-30}  {5,-22}",result[0],result[1],result[2],result[3],result[4],result[5]);
                             OverzichtRow = OverzichtRow.Replace(";", "");
                             OverzichtRow = OverzichtRow.Replace(",", "");
                             Regels.Add(OverzichtRow);
@@ -81,6 +80,5 @@ namespace Vragen_en_klachten
                 }
             }
         }
-
     }
 }

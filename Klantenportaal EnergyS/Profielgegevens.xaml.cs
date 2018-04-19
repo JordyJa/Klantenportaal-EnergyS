@@ -85,6 +85,7 @@ namespace Vragen_en_klachten
                                 Mobiel.Text = result[5];
                                 Huisnummer.Text = Nieuwehuis[x];
                                 Woonplaats.Text = NieuweWoon[x];
+                                Thuis.Text = "046-0543491";
                             }
                             
                         }

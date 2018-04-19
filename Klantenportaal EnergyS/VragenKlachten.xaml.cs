@@ -40,5 +40,10 @@ namespace Klantenportaal_EnergyS
         {
             this.Frame.Navigate(typeof(Vragen_en_klachten.MainPage));
         }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(Vragen_en_klachten.Bevestiging));
+        }
     }
 }

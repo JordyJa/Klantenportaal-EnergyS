@@ -14,7 +14,7 @@
         <ComboBox x:Name="Bericht_type" ItemsSource="{x:Bind bericht_Types}" HorizontalAlignment="Left" Margin="601,347,0,0" VerticalAlignment="Top" Width="186"/>
         <TextBox Name="Klant_Bericht" HorizontalAlignment="Left" Height="242" Margin="601,433,0,0" Text="" VerticalAlignment="Top" Width="388" TextWrapping="Wrap"/>
         <TextBlock HorizontalAlignment="Left" Margin="478,441,0,0" Text="Uw bericht:" TextWrapping="Wrap" VerticalAlignment="Top"/>
-        <Button Content="versturen" HorizontalAlignment="Left" Margin="601,730,0,0" VerticalAlignment="Top" Width="158"/>
+        <Button Content="versturen" HorizontalAlignment="Left" Margin="601,730,0,0" VerticalAlignment="Top" Width="158" Click="Button_Click_1"/>
     </Grid>
 
 </Page>

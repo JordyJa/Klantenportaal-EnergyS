@@ -16,6 +16,6 @@
             <Image Source="Assets/Pijltje3.png" Stretch="Fill" />
         </Button>
         <Button Content="verlenging" HorizontalAlignment="Left" Margin="451,611,0,0" VerticalAlignment="Top" Height="39" Width="144" Click="Button_Click_1"/>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="855,600,0,0" VerticalAlignment="Top" Height="39" Width="144"/>
+        <Button Content="opzegging" HorizontalAlignment="Left" Margin="855,611,0,0" VerticalAlignment="Top" Height="39" Width="144"/>
     </Grid>
 </Page>
